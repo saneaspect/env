@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# Directory containing wallpapers
+wallpaper_dir="$HOME/Pictures/Wallpapers/Desktop"
+
+# Current directory (to cd back to)
+cwd="$(pwd)"
+
+cd "$wallpaper_dir" || exit 1
+
+# Handle spaces in filenames
+IFS=$'\n'
+
+# Grab the user-selected wallpaper
+selected_wall=$(for a in *.jpg *.png; do echo -en "$a\0icon\x1f$a\n" ; done | rofi -dmenu -p "Choose Wallpaper" -theme "~/.config/rofi/launchers/type-2/style-13.rasi")
+
+# If not empty, pass to walset-backend
+if [ -n "$selected_wall" ]; then
+    walset-backend "$selected_wall"
+fi
+
+# Go back to where you came from
+cd "$cwd" || exit 1
+

@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+IMG_DIR="${HOME}/Pictures/Wallpapers/Application"
+
+# Pick a random image safely (handles spaces/newlines, and common formats)
+rand_img="$(
+  find "$IMG_DIR" -type f \( -iname '*.png' -o -iname '*.jpg' -o -iname '*.jpeg' -o -iname '*.webp' -o -iname '*.avif' \) -print0 \
+  | shuf -z -n 1 \
+  | tr -d '\0'
+)"
+
+# Fallback if the folder is empty
+if [[ -z "${rand_img}" ]]; then
+  rand_img="${HOME}/.config/rofi/images/a.png"
+fi
+
+# Launch Rofi, overriding just the background-image in your imagebox
+# The ", height" keeps your current scaling behavior.
+rofi -modi drun,run,filebrowser,window \
+     -show drun \
+     -theme "$HOME/.config/rofi/launchers/type-6/style-1.rasi" \
+     -theme-str "imagebox { background-image: url(\"${rand_img}\", height); }"
+

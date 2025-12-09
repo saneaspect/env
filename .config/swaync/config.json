@@ -8,7 +8,7 @@
   "control-center-margin-top": 20,
   "control-center-width": 500,
   "cssPriority": "application",
-  "control-center-positionX": "right",
+  "control-center-positionX": "left",
   "control-center-positionY": "center",
   "fit-to-screen": true,
   "hide-on-action": false,

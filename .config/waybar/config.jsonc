@@ -145,8 +145,8 @@
       }
     },
     "actions": {
-      "on-click-right": "shift_down",
-      "on-click": "shift_up"
+      "on-click-right": "shift_up",
+      "on-click": "shift_down"
     }
   },
 

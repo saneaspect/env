@@ -3,7 +3,7 @@
 # -- Install dependencies
 echo -e "\n\e[1;34mInstalling dependencies...\e[0m\n"
 
-yay -S --needed hyprland waybar kitty power-profiles-daemon hyprsunset hyprlock rofi papirus-icon-theme ttf-jetbrains-mono-nerd adw-gtk-theme qt5ct swww kvantum kvantum-qt5 brightnessctl swaync gtk-engine-murrine gtk-engines matugen-bin nwg-look papirus-folders playerctl nerd-fonts-noto-sans-mono blueman grim thunar hypridle rofi-calc slurp exa pavucontrol grimblast-git htop vesktop-bin nvidia nvidia-utils vulkan-icd-loader upscayl-bin unityhub qemu virt-manager virt-viewer dnsmasq vde2 bridge-utils openbsd-netcat dmidecode ebtables iptables gdm libayatana-appindicator wl-clipboard wl-clip-persist nwg-clipman cliphist hyprshot wlsunset
+yay -S --needed hyprland waybar kitty power-profiles-daemon hyprsunset hyprlock rofi papirus-icon-theme ttf-jetbrains-mono-nerd adw-gtk-theme qt5ct swww kvantum kvantum-qt5 brightnessctl swaync gtk-engine-murrine gtk-engines matugen-bin nwg-look papirus-folders playerctl nerd-fonts-noto-sans-mono blueman grim thunar hypridle rofi-calc slurp exa pavucontrol grimblast-git htop vesktop-bin nvidia nvidia-utils vulkan-icd-loader upscayl-bin unityhub qemu virt-manager virt-viewer dnsmasq vde2 bridge-utils openbsd-netcat dmidecode ebtables iptables gdm libayatana-appindicator wl-clipboard wl-clip-persist nwg-clipman cliphist hyprshot wlsunset neofetch
 
 # -- Install fonts
 echo -e "\n\e[1;34mInstalling fonts...\e[0m\n"
